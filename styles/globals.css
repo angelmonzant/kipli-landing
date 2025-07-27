@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Custom base styles */
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-white text-dark;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors duration-200 shadow-soft;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-soft p-6 hover:shadow-medium transition-shadow duration-200;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent;
+  }
+} 
