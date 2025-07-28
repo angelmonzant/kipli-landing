@@ -13,6 +13,9 @@ export interface BetaSignup {
   id?: number
   business_name: string
   email: string
+  phone: string
+  city: string
+  state: string
   created_at?: string
 }
 

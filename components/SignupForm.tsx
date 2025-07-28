@@ -64,6 +64,9 @@ export default function SignupForm({ className = '' }: SignupFormProps) {
       await insertBetaSignup({
         business_name: formData.business_name.trim(),
         email: formData.email.trim().toLowerCase(),
+        phone: formData.phone.trim(),
+        city: formData.city.trim(),
+        state: formData.state.trim()
       })
 
       setSuccess(true)
