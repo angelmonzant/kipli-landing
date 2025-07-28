@@ -67,8 +67,14 @@ export default function SignupForm({ className = '' }: SignupFormProps) {
       })
 
       setSuccess(true)
-      setFormData({ business_name: '', email: '' })
-    } catch (err) {
+      setFormData({
+        business_name: '',
+        email: '',
+        phone: '',
+        city: '',
+        state: ''
+      })
+          } catch (err) {
       setError(err instanceof Error ? err.message : 'Error al enviar el formulario')
     } finally {
       setLoading(false)
