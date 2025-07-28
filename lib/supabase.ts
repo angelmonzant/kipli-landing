@@ -1,9 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Supabase configuration
-// You'll need to replace these with your actual Supabase credentials
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+// Supabase configuration (hardcoded for debug/testing)
+const supabaseUrl = 'https://xghhtgiqjjetnbtqteyf.supabase.co'
+const supabaseAnonKey = 'sb_publishable_-xhtSwo45bOd6NjSAI3FhQ_05LvWoxg'
 
 // Create Supabase client
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
